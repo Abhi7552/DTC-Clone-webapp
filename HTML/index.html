@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Application</title>
+    <!-- Your other meta tags and stylesheets go here -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <!-- Header Part Starts here -->
+    <!-- Contact Information Section -->
+    <div class="contact-section">
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>Phone: +1 123-456-7890</span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>Email: info@example.com</span>
+        </div>
+    </div>
+
+
+    <!-- Main Logo and Heading -->
+    <div class="main-logo">
+        <img src="../images/DTC1.png" alt="Your Logo">
+    </div>
+    <h1 class="main-heading">Welcome to DTC Bus Pass</h1>
+
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../HTML/home.html">Home</a></li>
+            <li><a href="../HTML/index.html">Apply for Bus Pass</a></li>
+            <li><a href="/HTML/priceCalculate.html">Price Calculator</a></li>
+            <!-- <li><a href="#">Regenerate E-Pass</a></li> -->
+            <li><a href="../HTML/trackStatus.html">Application Status</a></li>
+            <li><a href="../HTML/faq.html">FAQs</a></li>
+            <li><a href="../HTML/contactPage.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Your other HTML content -->
+    <div id="container">
+        <h1>Bus Pass Application</h1>
+        <form id="busPassForm" action="../HTML/Success.html" method="post" onsubmit="showSuccessPage()">
+            <!-- <div id="firstDiv"> -->
+                <label for="existingUser">Are you already a bus pass user?</label><br>
+                <input type="radio" id="yes" name="existingUser" value="yes" onclick="toggleBusPassNumber(true)">
+                <label for="yes">Yes</label><br>
+                <div id="busPassNumberDiv" style="display: none;">
+                    <label for="busPassNumber">Enter your previous bus pass number:</label><br>
+                    <input type="text" id="busPassNumber" name="busPassNumber"><br><br>
+                </div>
+                <input type="radio" id="no" name="existingUser" value="no" onclick="toggleBusPassNumber(false)">
+                <label for="no">No</label><br><br>
+            <!-- </div> -->
+            <!-- <div id="secondDiv"> -->
+                <label for="busPassType">Select the bus pass to apply:</label><br><br />
+                <select id="busPassType" name="busPassType">
+                    <option value="monthly">Monthly Pass</option>
+                    <option value="quarterly">Quarterly Pass</option>
+                    <option value="annual">Annual Pass</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            <!-- </div> -->
+             <div id="successContainer"></div>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Your Bus Pass System. All rights reserved.</p>
+    </footer>
+    <script src="../JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/a602ffd6c7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

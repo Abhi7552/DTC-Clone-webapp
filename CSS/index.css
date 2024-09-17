@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* In your style.css file */
+
+.contact-section {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-top: 20px; */
+    padding: 10px;
+    background-color: #ff9900;
+}
+
+.contact-item {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.contact-item i {
+    margin-right: 5px;
+}
+
+/* In your style.css file */
+
+.main-logo img {
+    max-width: 200px; /* Adjust the size as per your logo */
+    display: block;
+    margin: 0 auto;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 20px;
+    color: rgb(74, 103, 128);
+}
+
+/* In your style.css file */
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ff9900;
+}
+
+/* form section */
+
+#container{
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 17px;
+    /* display:flex; */
+}
+
+#busPassNumber{
+    margin-top: 4px;
+    padding: 8px;
+}
+
+label{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+select{
+    color: #202421;
+    padding: 6px;
+    font-size: 17px;
+    /* border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer; */
+}
+
+input[type="submit"]{
+    color: #40c96e;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Add hover effect if desired */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff9900;
+}

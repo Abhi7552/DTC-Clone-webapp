@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Price Calculator</title>
+    <link rel="stylesheet" href="../CSS/priceCalculate.css">
+</head>
+<body>
+    <h1>Bus Pass Price Calculator</h1>
+    <form id="priceCalculatorForm" action="calculate_price.php" method="post">
+        <!-- Pass Type -->
+        <label for="passType">Which type of pass do you want/have?</label><br>
+        <input type="radio" id="newPass" name="passType" value="new">
+        <label for="newPass">e-Pass</label>
+        <input type="radio" id="renewPass" name="passType" value="renew">
+        <label for="renewPass">Conventional Pass</label><br><br>
+
+        <!-- Bus Pass Type -->
+        <label for="busPassType">Select the type of bus pass:</label><br>
+        <select id="busPassType" name="busPassType">
+            <option value="routeA">Delhi to Gaziabad</option>
+            <option value="routeB">Delhi to Badarpur</option>
+        </select><br><br>
+
+        <!-- Number of Months -->
+        <label for="numMonths">Select the number of months:</label><br>
+        <input type="number" id="numMonths" name="numMonths" min="1" max="12" step="1"><br><br>
+
+        <!-- Pin Code -->
+        <label for="pinCode">Enter your pin code:</label><br>
+        <input type="text" id="pinCode" name="pinCode"><br><br>
+
+        <!-- Calculate Button -->
+        <input type="submit" value="Calculate">
+    </form>
+
+    <footer>
+        <p>© 2024 Your Bus Pass System. All rights reserved.</p>
+    </footer>
+    <!-- <script src="path/to/script.js"></script> -->
+</body>
+</html>
